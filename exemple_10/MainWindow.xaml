@@ -1,0 +1,19 @@
+﻿<Window x:Class="exemple_10.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:exemple_10"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="495.368" Width="800">
+    <Grid>
+        <ListBox x:Name="UserList" HorizontalAlignment="Left" Height="318" Margin="33,55,0,0" VerticalAlignment="Top" Width="138" RenderTransformOrigin="0.539,-0.055" SelectionChanged="ListBox_SelectionChanged"/>
+        <ListBox x:Name="MessageList" HorizontalAlignment="Left" Height="318" Margin="247,55,0,0" VerticalAlignment="Top" Width="534" RenderTransformOrigin="0.539,-0.055">
+        </ListBox>
+        <Button Content="Сохранить в фомате json" Margin="48,400,567,34" RenderTransformOrigin="3.333,0.678" Click="Button_Click"/>
+        <Label x:Name="USER_ID" Content="Пользователи" HorizontalAlignment="Left" Margin="77,24,0,0" VerticalAlignment="Top" RenderTransformOrigin="12.383,0.277"/>
+        <Label Content="Сообщения" HorizontalAlignment="Left" Margin="464,24,0,0" VerticalAlignment="Top" RenderTransformOrigin="12.383,0.277"/>
+        <Button x:Name="TextBox" Content="Отправить сообщение" Margin="373,400,188,34" RenderTransformOrigin="3.333,0.678" Click="TextBox_Click"/>
+
+    </Grid>
+</Window>
